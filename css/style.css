@@ -9,7 +9,18 @@
 }
 
 .contenedor{
+    /* altura del contenedor esto **falla** */
+    height: 10rem;
     display:flex;
+    /* flex-wrap: wrap; */
+    /* Centra el contenido de los div que tenemos dentros del div contenedor (div padre) */
+    justify-content: center;
+    /* Crea el espacio entre los div  */
+    /* justify-content: space-between; */
+    /* Posiciona los div en columnas */
+    flex-direction: column;
+    /* Alinea todo los div que tiene dentro el contenedor en el cento */
+    align-items: center;
 }
 
 .imagen{
@@ -19,22 +30,56 @@
     2- añadimos imagen desdeada con background-image: url(../img/google.jpg); 
     */
     height: 10rem;
-    width: 10rem;
+    width: 20rem;
     background-image: url(../img/google.jpg);
     /* Escalamos la imagen al tamaño que hemos definido en la altura y ancho */
     background-size: contain;
-    /* si queremos que no se repita la imagen  */
-    background-repeat: no-repeat;
-    
-    display: flex;
+    /* si queremos que no se repita la imagen  en bucle */
+    background-repeat: no-repeat;  
 }
 
-.boton{
+.texto{
+
+   /* border: none; */
+
+}
+
+input[type="text"]{
+    /* border: none; */
+    /* Cambia la apariencia del cursor */
+    cursor: pointer;
+    /* Tamaño que le damos al input del boton para hacerlo mas grande o mas pequeño */
+    padding: 0.25rem;
+    margin: 1rem;
+}
+
+input[type="text"]:focus{
+    width: 10rem;
+    /* Agrega una sombra al input */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+input[type="button"]{
+    /* cursor: pointer; */
+    /* Agrega una sombra al input */
+    /* Tamaño que le damos al input del boton para hacerlo mas grande o mas pequeño */
+    padding: 0.25rem;
+    /* Espacio que le damos al input con respecto a los demas elementos */
+    margin: 0.25rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.botones{
+    display: flex;
+    /* Creamos el margen sobre el div que estamos trabajando en este caso solo en la clase .botones */
+    /* margin: 1rem; */
+    /* padding: 1rem; */
 
 }
 
 .boton_buscar{
-
+  
 }
 
 .suerte{
@@ -42,5 +87,5 @@
 }
 
 .idiomas{
-
+    
 }
