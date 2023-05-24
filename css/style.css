@@ -1,3 +1,46 @@
-h1{
-    background-color: blue;
+:root{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display:flex;
+}
+
+.imagen{
+    /* 
+    Para añadir una imagen
+    1- definimos altura y ancho (height y width)
+    2- añadimos imagen desdeada con background-image: url(../img/google.jpg); 
+    */
+    height: 10rem;
+    width: 10rem;
+    background-image: url(../img/google.jpg);
+    /* Escalamos la imagen al tamaño que hemos definido en la altura y ancho */
+    background-size: contain;
+    /* si queremos que no se repita la imagen  */
+    background-repeat: no-repeat;
+    
+    display: flex;
+}
+
+.boton{
+
+}
+
+.boton_buscar{
+
+}
+
+.suerte{
+
+}
+
+.idiomas{
+
 }
