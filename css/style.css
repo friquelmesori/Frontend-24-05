@@ -10,7 +10,7 @@
 
 .contenedor{
     /* altura del contenedor esto **falla** */
-    height: 10rem;
+    height: 90vh;
     display:flex;
     /* flex-wrap: wrap; */
     /* Centra el contenido de los div que tenemos dentros del div contenedor (div padre) */
@@ -45,19 +45,25 @@
 }
 
 input[type="text"]{
+    
     /* border: none; */
+    /* Atributo que define el ancho de un input con puede ser tanto con size como width */
+    size: 100;
     /* Cambia la apariencia del cursor */
     cursor: pointer;
     /* Tamaño que le damos al input del boton para hacerlo mas grande o mas pequeño */
     padding: 0.25rem;
     margin: 1rem;
+    border-radius: 20px;
 }
 
 input[type="text"]:focus{
-    width: 10rem;
+    /* width: 10rem; */
     /* Agrega una sombra al input */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    
+    padding: 0.25rem;
+    margin: 1rem;
+    border-radius: 20px;
 }
 
 input[type="button"]{
@@ -87,5 +93,6 @@ input[type="button"]{
 }
 
 .idiomas{
-    
+    display: flex;
+    margin: 1rem;
 }
