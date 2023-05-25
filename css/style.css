@@ -40,6 +40,11 @@
 }
 
 .texto{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 3.5em;
+    padding-left: 0.5em;
      /* Para que no aparezcan los bordes */
     /* border: none; */
 
@@ -63,7 +68,7 @@ input[type="text"]{
     border-radius: 20px;
 }
 
-input[type="text"]:focus{
+input[type="text"]:focus-visible{
     /* width: 10rem; */
     /* Agrega una sombra al input */
     /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
@@ -71,15 +76,21 @@ input[type="text"]:focus{
     /* margin: 1rem; */
     /* border-radius: 20px; */
     border: none;
+    outline: none;
 }
 
 .buscador{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     border-radius: 50px;
     border: 1px solid black;
+    /* Margen con respecto a los demas elementos */
     margin: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Espacio que se aplica solo en el lado derecho */
+    padding-right: 0.75em;
+    /* Espacio que se aplica solo en el lado izquierdo */
+    padding-left: 0.75em;
 }
 
 input[type="button"]{
@@ -93,22 +104,21 @@ input[type="button"]{
 }
 
 .icono-lupa{
-    height: auto;
-    width: auto;
-    padding: 15px 0px 0px 15px;
+    /* height: auto; */
+    /* width: auto; */
+    /* padding: 15px 0px 0px 15px; */
 }
 
 .icono-micro{
-    height: auto;
-    width: auto;
-    padding: 15px 0px 0px 0px;
+    /* height: auto; */
+    /* width: auto; */
+    /* padding: 15px 0px 0px 0px; */
 }
 
 .icono-camara{
-    height: auto;
-    width: auto;
-    background-size: contain;
-
+    /* height: auto; */
+    /* width: auto; */
+    /* background-size: contain; */
 }
 
 .botones{
@@ -132,9 +142,6 @@ input[type="button"]{
     width: auto;
     /* display: flex; */
     margin: 1rem;
-    
-}
-
-a{
     padding: 2px;
+    
 }
