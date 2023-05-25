@@ -13,7 +13,8 @@
     height: 90vh;
     display:flex;
     /* flex-wrap: wrap; */
-    /* Centra el contenido de los div que tenemos dentros del div contenedor (div padre) */
+    /* Centra el contenido de los div que tenemos dentros del div contenedor (div padre), 
+    hay que tener cuidado porque no se pueden poner dos justify-content: ; en la misma etiqueta*/
     justify-content: center;
     /* Crea el espacio entre los div  */
     /* justify-content: space-between; */
@@ -39,13 +40,17 @@
 }
 
 .texto{
-
-   /* border: none; */
+     /* Para que no aparezcan los bordes */
+    /* border: none; */
 
 }
 
 input[type="text"]{
-    
+    padding: 15px 15px 15px 15px;
+    /* Para que no aparezcan los bordes */
+    border: none;
+    /* Anchura del input */
+    width: 30rem;
     /* border: none; */
     /* Atributo que define el ancho de un input con puede ser tanto con size como width */
     size: 100;
@@ -54,16 +59,27 @@ input[type="text"]{
     /* Tamaño que le damos al input del boton para hacerlo mas grande o mas pequeño */
     padding: 0.25rem;
     margin: 1rem;
+    /* Para hacer el borde */
     border-radius: 20px;
 }
 
 input[type="text"]:focus{
     /* width: 10rem; */
     /* Agrega una sombra al input */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 0.25rem;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+    /* padding: 0.25rem; */
+    /* margin: 1rem; */
+    /* border-radius: 20px; */
+    border: none;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
     margin: 1rem;
-    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 input[type="button"]{
@@ -74,6 +90,25 @@ input[type="button"]{
     /* Espacio que le damos al input con respecto a los demas elementos */
     margin: 0.25rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icono-lupa{
+    height: auto;
+    width: auto;
+    padding: 15px 0px 0px 15px;
+}
+
+.icono-micro{
+    height: auto;
+    width: auto;
+    padding: 15px 0px 0px 0px;
+}
+
+.icono-camara{
+    height: auto;
+    width: auto;
+    background-size: contain;
+
 }
 
 .botones{
@@ -93,6 +128,13 @@ input[type="button"]{
 }
 
 .idiomas{
-    display: flex;
+    height: auto;
+    width: auto;
+    /* display: flex; */
     margin: 1rem;
+    
+}
+
+a{
+    padding: 2px;
 }
